@@ -1,8 +1,14 @@
+import Comp from "./Comp"
 
 function App() {
 
   return (
-    <h1>Helww</h1>
+    <>
+      <h1>
+        Hello World
+      </h1>
+      <Comp/>
+    </>
   )
 }
 
