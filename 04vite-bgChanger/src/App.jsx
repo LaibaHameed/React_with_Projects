@@ -1,33 +1,30 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  const [color, setColor] = useState("#bc6c25");
+  // const colors = [{ name:"Red", colCode : "#xyz"}, 
+  // { name:"Blue", colCode : "#3e5c76"},
+  // { name:"Green", colCode : "#283618"},
+  // { name:"Red", colCode : "#c1121f"}]
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className='h-full' style={{backgroundColor: color}}> 
+    <div className='box'>
+    <div className='inerBox'>
+    {/* return ({ colors.map((col, id) => {
+    <button key={id}
+     onClick={ () => setColor(col.colCode)} > {col.name}</button> 
+     })}) */}
+      <button onClick={() =>setColor('#c1121f')} className=''>Red</button>
+      <button onClick={() =>setColor('#ffd166')}>yellow</button>
+      <button onClick={() =>setColor('#3e5c76')}>blue</button>
+      <button onClick={() =>setColor('black')}>black</button>
+      <button onClick={() =>setColor('#283618')}>green</button>
+      <button onClick={() =>setColor('#540b0e')}>brown</button>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    </div>
+    </div>
     </>
   )
 }
