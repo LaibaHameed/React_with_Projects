@@ -1,0 +1,304 @@
+
+.header-img{
+    width: 100%;
+}
+
+.reservation{
+    margin: 8rem 0rem 0rem 12rem;
+    font-family: 'Koulen';
+    font-size: 4rem;
+    letter-spacing: .12rem;
+    font-weight: 400;
+    color: var(--main-color);
+}
+
+.hr{
+    margin: 1rem 0rem 0rem 12rem;
+    width: 12rem;
+    height: 1.5rem;
+    border-bottom: 3px solid var(--second-color);
+}
+
+.paragraph{
+    max-width: 65rem;
+    margin: 4rem 12rem 0rem 12rem ;
+    font-size: 1.6rem;
+    line-height: 3rem;
+    color: rgba(37, 35, 35, 0.815)  ;
+    text-transform: initial;
+}
+
+.parent-box{
+    margin: 2rem 8rem 10rem 12rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.child-box1{
+    width: 65%;
+}
+
+.form-div > input{
+    width: 48%;
+   height: 5rem;
+   outline: none;
+   border: none;
+   padding-left: 1rem;
+   padding-right: 1rem;
+   font-size: 1.5rem;
+   margin-bottom: 2rem;
+   background-color: var(--form-input);
+   color-scheme: var(--second-color);
+}
+
+input::placeholder{
+    color: var(--second-color);
+}
+
+.form-div > input:focus{
+    border: 2px solid rgb(201, 197, 189);
+    transition: all 0s linear;
+}
+
+textarea{
+    width: 98%;
+    outline: none;
+   border: none;
+   padding-left: 1rem;
+   padding-top: 1.5rem;
+   font-size: 1.5rem;
+   background-color: var(--form-input);
+}
+
+.input{
+    margin-right: 2%;
+}
+
+textarea:focus, input:focus{
+    border: 2px solid rgb(201, 197, 189);
+    transition: all 0s linear;
+}
+
+textarea::placeholder{
+    color: var(--second-color);
+}
+
+form > button{
+    width: 20rem;
+    display: inline-block;
+    padding: .9rem 1.5rem;
+    border-radius: var(--border-radius);
+    color: var(--white-color);
+    background: var(--second-color);
+    font-family: cursive;
+    cursor: pointer;
+    margin: .9rem;
+    font-size: 1.9rem;
+    font-weight: 420;
+    outline: none;
+    border: none;
+  transition: all .2s linear;
+}
+
+form > button:hover{
+    border-radius: var(--border-radius-hover);
+   background-color: var(--main-color);
+}
+
+.child-box2{
+    width: 33%;
+    margin: auto;
+}
+
+.child-box2 > img{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* media querries */
+ @media(max-width:1200px){
+    form > .parent {
+        margin: 5rem;
+     }
+ 
+     .checkout, .empty{
+        margin: 5rem;
+     }
+}
+
+@media(max-width:1024px){
+    .parent-box{
+        margin: 2rem 8rem 10rem 12rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .child-box1{
+        width: 80%;
+    }
+
+    .child-box2{
+        margin-top: 3rem;
+        width: 50%;
+    }
+}
+
+@media(max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+}
+
+@media(max-width:768px){
+
+    #menu-btn{
+        display: initial;
+    }
+
+    #menu-btn.fa-times{
+        transform:rotate(180deg);
+    }
+
+    .header .navbar{
+        position: absolute;
+        top:99%; left:0; right:0;
+        background:#fff;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    .header .navbar li{
+        display: block;
+        font-size: 2.2rem;
+        margin:0;
+        padding:1.5rem 2rem;
+    }
+
+    .home{
+        text-align: center;
+    }
+
+    .home .row .content h3{
+        font-size: 4rem;
+        margin-top: 4rem;
+    }
+
+    .menu .box-container .box{
+        margin-left: 0;
+        margin-top: 6rem;
+        flex-flow: column;
+        text-align: center;
+    }
+
+    .menu .box-container .box img{
+        margin-left: 0;
+        margin-top: -6rem;
+    }
+
+    form > .parent {
+        flex-direction: column;
+       margin: 5rem 12rem 5rem 12rem;
+    }
+
+    form > .parent > .child1,form > .parent > .child2{
+        width: 100%;
+    }
+
+    .form-div > input{
+        width: 98%;
+    }
+
+    .parent-box{
+        margin: 2rem 4rem 10rem 4rem;
+    }
+
+}
+
+@media (max-width:624px){
+    form > .parent {
+       margin: 3rem 6rem 3rem 6rem;
+    }
+
+    .checkout, .empty{
+       margin: 3rem 6rem 3rem 6rem;
+    }
+
+    .heading{
+        padding-left: 7rem;
+        padding-right: 7rem;
+    }
+
+    .reservation{
+        margin: 8rem 1rem 0rem 4rem;
+    }
+    
+    .hr{
+        margin: 1rem 1rem 0rem 4rem;
+    }
+    
+    .paragraph{
+        margin: 4rem 4rem 0rem 4rem ;
+    }
+
+    .parent-box{
+        margin: 2rem 1.2rem 10rem 1.2rem;
+    }
+
+
+}
+
+@media(max-width:480px){
+    form > .parent {
+       margin: 3rem;
+    }
+
+    .checkout, .empty{
+       margin: 3rem;
+    }
+
+    .heading{
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    .parent-box{
+        margin: 2rem .5rem 10rem .5rem;
+    }
+}

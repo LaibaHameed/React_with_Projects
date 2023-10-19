@@ -1,0 +1,69 @@
+/* home section style  */
+
+.home {
+    min-height: 800px;
+    background: url(../../assets/imgs/home-bg.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 2rem 9%;
+    padding-top: 12rem;
+
+}
+
+.home .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.8rem;
+}
+
+.home .row .content {
+    flex: 1 1 42rem;
+}
+
+.freshCoffee{
+    max-width: 50rem;
+}
+
+.home .row .content h3 {
+    font-size: 6rem;
+    font-family: 'Poppins';
+    font-weight: 600;
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+.home .row .image {
+    flex: 1 1 42rem;
+    padding-top: 10rem;
+    text-align: center;
+}
+
+.home .row .image img {
+    height: 35rem;
+    animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0rem);
+    }
+
+    50% {
+        transform: translateY(-5rem);
+    }
+}
+
+.home .img-slider {
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.home .img-slider img {
+    height: 9rem;
+    margin: 0 .5rem;
+    cursor: pointer;
+    margin-top: 5rem;
+}

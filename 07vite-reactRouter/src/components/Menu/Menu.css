@@ -1,0 +1,363 @@
+/* menu section starts  */
+.header-img {
+    width: 100%;
+}
+
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--form-input);
+}
+
+.menu-section {
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    margin: 10rem 8rem 10rem 8rem;
+    justify-content: center;
+}
+
+.section1 {
+    width: 48%;
+    margin: 1rem;
+}
+
+.menu-no {
+    font-family: 'Koulen';
+    font-size: 4rem;
+    font-weight: 400;
+    color: var(--main-color);
+}
+
+.hr {
+    margin-left: .5rem;
+    width: 12rem;
+    height: 1.5rem;
+    border-bottom: 3px solid var(--second-color);
+}
+
+.parent-div {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5rem;
+    width: 98%;
+}
+
+.child-div1 {
+    width: 18%;
+}
+
+.parent-div>.child-div1>img {
+    width: 83px;
+    height: 83px;
+}
+
+.child-div2 {
+    width: 75%;
+    padding: 1rem 1rem;
+}
+
+.sub-child1 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sub-child1>span {
+    font-size: 2.5rem;
+    font-family: 'Koulen';
+    color: var(--main-color);
+}
+
+.sub-child2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.sub-child2>p {
+    width: 80%;
+    font-size: 1.5rem;
+    color: var(--second-color);
+}
+
+.sub-child2>span {
+    height: 2.5rem;
+    width: 6rem;
+    font-size: 1.4rem;
+    padding-top: .3rem;
+    background-color: var(--second-color);
+    color: var(--white-color);
+    text-align: center;
+    font-family: cursive;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media querries */
+@media(max-width:1200px) {
+    form>.parent {
+        margin: 5rem;
+    }
+
+    .checkout,
+    .empty {
+        margin: 5rem;
+    }
+}
+
+@media(max-width:1024px) {
+    .parent-box {
+        margin: 2rem 8rem 10rem 12rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .child-box1 {
+        width: 80%;
+    }
+
+    .child-box2 {
+        margin-top: 3rem;
+        width: 50%;
+    }
+
+    .menu-section {
+        flex-direction: column;
+        margin: 10rem 8rem 10rem 8rem;
+    }
+
+    .section1 {
+        width: 98%;
+        margin: 3rem;
+    }
+
+}
+
+@media(max-width:991px) {
+
+    html {
+        font-size: 55%;
+    }
+}
+
+@media(max-width:768px) {
+
+    #menu-btn {
+        display: initial;
+    }
+
+    #menu-btn.fa-times {
+        transform: rotate(180deg);
+    }
+
+    .header .navbar {
+        position: absolute;
+        top: 99%;
+        left: 0;
+        right: 0;
+        background: #fff;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .header .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    .header .navbar li {
+        display: block;
+        font-size: 2.2rem;
+        margin: 0;
+        padding: 1.5rem 2rem;
+    }
+
+    .home {
+        text-align: center;
+    }
+
+    .home .row .content h3 {
+        font-size: 4rem;
+        margin-top: 4rem;
+    }
+
+    .menu .box-container .box {
+        margin-left: 0;
+        margin-top: 6rem;
+        flex-flow: column;
+        text-align: center;
+    }
+
+    .menu .box-container .box img {
+        margin-left: 0;
+        margin-top: -6rem;
+    }
+
+    form>.parent {
+        flex-direction: column;
+        margin: 5rem 12rem 5rem 12rem;
+    }
+
+    form>.parent>.child1,
+    form>.parent>.child2 {
+        width: 100%;
+    }
+
+    .form-div>input {
+        width: 98%;
+    }
+
+    .parent-box {
+        margin: 2rem 4rem 10rem 4rem;
+    }
+
+    .menu-section {
+        margin: 10rem 6rem 10rem 6rem;
+    }
+
+    .section1 {
+        width: 98%;
+        margin: 2rem;
+    }
+
+}
+
+@media (max-width:624px) {
+    form>.parent {
+        margin: 3rem 6rem 3rem 6rem;
+    }
+
+    .checkout,
+    .empty {
+        margin: 3rem 6rem 3rem 6rem;
+    }
+
+    .heading {
+        padding-left: 7rem;
+        padding-right: 7rem;
+    }
+
+    .reservation {
+        margin: 8rem 1rem 0rem 4rem;
+    }
+
+    .hr {
+        margin: 1rem 1rem 0rem 4rem;
+    }
+
+    .paragraph {
+        margin: 4rem 4rem 0rem 4rem;
+    }
+
+    .parent-box {
+        margin: 2rem 1.2rem 10rem 1.2rem;
+    }
+
+    .menu-section {
+        margin: 10rem 0.2rem 10rem 0.2rem;
+    }
+
+    .section1 {
+        width: 98%;
+        margin-left: .5rem;
+        margin-right: .5rem;
+    }
+
+    .child-div1 {
+        width: 20%;
+    }
+
+}
+
+@media(max-width:480px) {
+    form>.parent {
+        margin: 3rem;
+    }
+
+    .checkout,
+    .empty {
+        margin: 3rem;
+    }
+
+    .heading {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    .parent-box {
+        margin: 2rem .5rem 10rem .5rem;
+    }
+
+    .child-div1 {
+        visibility: hidden;
+        display: none;
+    }
+}
