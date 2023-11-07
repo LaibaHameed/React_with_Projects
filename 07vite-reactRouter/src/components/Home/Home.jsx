@@ -19,7 +19,7 @@ const Home = () => {
           <div className="image">
             <img
               // src={require('../../assets/imgs/home-img-1.png')}
-              src="../../assets/imgs/home-img-1.png"
+              src="imgs/home-img-1.png"
               className="main-img"
               alt=""
             />
@@ -27,9 +27,9 @@ const Home = () => {
         </div>
 
         <div className="img-slider">
-          <img src="../../assets/imgs/home-img-1.png" alt="" />
-          <img src="../../assets/imgs/home-img-2.png" alt="" />
-          <img src="../../assets/imgs/home-img-3.png" alt="" />
+          <img src="imgs/home-img-1.png" alt="" />
+          <img src="imgs/home-img-2.png" alt="" />
+          <img src="imgs/home-img-3.png" alt="" />
         </div>
       </section>
       {/* <!-- home section ends  --> */}

@@ -44,14 +44,14 @@
 }
 
 .left{
-	background: url("../../assets/contact-us/img-10.jpg") no-repeat center;
+	background: url("contact-us/img-10.jpg") no-repeat center;
     opacity:0.8 ;
 	background-size: cover;
 	height: 100%;
 }
 
 .left:hover{
-	background: url("../../assets/contact-us/img-5.jpg") no-repeat center;
+	background: url("contact-us/img-5.jpg") no-repeat center;
     background-size: cover;
 	height: 100%;
     transition: all .1s ease-in;
@@ -66,7 +66,9 @@ h2{
 	padding: 0 0 10px;
 	margin-bottom: 10px;
     color: var(--main-color);
+	font-family: 'Koulen';
     font-size: 3rem;
+	font-weight: 400;
 }
 
 h2:after{

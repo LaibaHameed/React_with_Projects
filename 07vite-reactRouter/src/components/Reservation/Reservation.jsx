@@ -8,14 +8,14 @@ const Reservation = () => {
       <section className="head-img">
         <img
           className="header-img"
-          src="../../assets/imgs/reservation.jpg"
+          src="imgs/reservation.jpg"
           alt=""
           srcset=""
         />
       </section>
 
       <h1 className="reservation">RESERVATION FORM</h1>
-      <div className="hr"></div>
+      <div className="hR"></div>
       <p className="paragraph">
         <small>
           Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil
@@ -80,7 +80,7 @@ const Reservation = () => {
           </form>
         </div>
         <div className="child-box2">
-          <img src="../../assets/imgs/Reservation-N-4.jpg" alt="" />
+          <img src="imgs/Reservation-N-4.jpg" alt="" />
         </div>
       </div>
     </>

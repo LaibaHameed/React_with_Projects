@@ -1,12 +1,12 @@
 import React from 'react'
-import "./Menu"
+import "./Menu.css"
 
 const Menu = () => {
   return (
     <>
         {/* <!-- main section starts --> */}
 <section className="head-img">
-    <img className="header-img" src="../../assets/menu-imgs/main-img.jpg" alt="" srcset=""/>
+    <img className="mheader-img" src="menu-imgs/main-img.jpg" alt="" srcset=""/>
 </section>
 
 {/* <!-- menu section starts  --> */}
@@ -19,7 +19,7 @@ const Menu = () => {
         <div className="parent-div">
 
             <div className="child-div1">
-                <img src="../../assets/menu-imgs/h-1-list-icon-img-150x150.jpg"/>
+                <img src="menu-imgs/h-1-list-icon-img-150x150.jpg"/>
             </div>
 
             <div className="child-div2">
@@ -39,7 +39,7 @@ const Menu = () => {
         <div className="parent-div">
 
           <div className="child-div1">
-              <img src="../../assets/menu-imgs/h-1-list-icon-img-2-150x150.jpg"/>
+              <img src="menu-imgs/h-1-list-icon-img-2-150x150.jpg"/>
           </div>
 
           <div className="child-div2">
@@ -58,7 +58,7 @@ const Menu = () => {
       <div className="parent-div">
 
           <div className="child-div1">
-              <img src="../../assets/menu-imgs/h-1-list-icon-img-3-150x150.jpg"/>
+              <img src="menu-imgs/h-1-list-icon-img-3-150x150.jpg"/>
           </div>
 
           <div className="child-div2">
@@ -77,7 +77,7 @@ const Menu = () => {
       <div className="parent-div">
 
           <div className="child-div1">
-              <img src="../../assets/menu-imgs/h-1-list-icon-img-4-150x150.jpg"/>
+              <img src="menu-imgs/h-1-list-icon-img-4-150x150.jpg"/>
           </div>
 
           <div className="child-div2">
@@ -96,7 +96,7 @@ const Menu = () => {
       <div className="parent-div">
 
           <div className="child-div1">
-              <img src="../../assets/menu-imgs/h-1-list-icon-img-5-150x150.jpg"/>
+              <img src="menu-imgs/h-1-list-icon-img-5-150x150.jpg"/>
           </div>
 
           <div className="child-div2">
@@ -115,7 +115,7 @@ const Menu = () => {
       <div className="parent-div">
 
           <div className="child-div1">
-              <img src="../../assets/menu-imgs/h-1-list-icon-img-6-150x150.jpg"/>
+              <img src="menu-imgs/h-1-list-icon-img-6-150x150.jpg"/>
           </div>
 
           <div className="child-div2">
@@ -139,7 +139,7 @@ const Menu = () => {
       <div className="parent-div">
 
           <div className="child-div1">
-              <img src="../../assets/menu-imgs/h-1-list-icon-img-12-150x150.jpg"/>
+              <img src="menu-imgs/h-1-list-icon-img-12-150x150.jpg"/>
           </div>
 
           <div className="child-div2">
@@ -158,7 +158,7 @@ const Menu = () => {
       <div className="parent-div">
 
           <div className="child-div1">
-              <img src="../../assets/menu-imgs/h-1-list-icon-img-11-150x150.jpg"/>
+              <img src="menu-imgs/h-1-list-icon-img-11-150x150.jpg"/>
           </div>
 
           <div className="child-div2">
@@ -177,7 +177,7 @@ const Menu = () => {
       <div className="parent-div">
 
           <div className="child-div1">
-              <img src="../../assets/menu-imgs/h-1-list-icon-img-8-150x150.jpg"/>
+              <img src="menu-imgs/h-1-list-icon-img-8-150x150.jpg"/>
           </div>
 
           <div className="child-div2">
@@ -196,7 +196,7 @@ const Menu = () => {
       <div className="parent-div">
 
           <div className="child-div1">
-              <img src="../../assets/menu-imgs/h-1-list-icon-img-7-150x150.jpg"/>
+              <img src="menu-imgs/h-1-list-icon-img-7-150x150.jpg"/>
           </div>
 
           <div className="child-div2">
@@ -215,7 +215,7 @@ const Menu = () => {
       <div className="parent-div">
 
           <div className="child-div1">
-              <img src="../../assets/menu-imgs/h-1-list-icon-img-9-150x150.jpg"/>
+              <img src="menu-imgs/h-1-list-icon-img-9-150x150.jpg"/>
           </div>
 
           <div className="child-div2">
@@ -235,7 +235,7 @@ const Menu = () => {
       <div className="parent-div">
 
           <div className="child-div1">
-              <img src="../../assets/menu-imgs/h-1-list-icon-img-10-150x150.jpg"/>
+              <img src="menu-imgs/h-1-list-icon-img-10-150x150.jpg"/>
           </div>
 
           <div className="child-div2">
