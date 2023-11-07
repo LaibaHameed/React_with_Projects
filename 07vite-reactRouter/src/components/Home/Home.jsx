@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import './Home.css'
 
 const Home = () => {
@@ -19,6 +19,7 @@ const Home = () => {
           <div className="image">
             <img
               // src={require('../../assets/imgs/home-img-1.png')}
+              src="../../assets/imgs/home-img-1.png"
               className="main-img"
               alt=""
             />
