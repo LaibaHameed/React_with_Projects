@@ -6,9 +6,9 @@ const ThemeBtn = () => {
     const onChangeBtn = (e) => {
         const darkModeStatus = e.currentTarget.checked
         if (darkModeStatus) {
-            lightTheme()
-        } else {
             darkTheme()
+        } else {
+            lightTheme()
         }
     }
 
