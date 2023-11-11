@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import { useTodo } from "../context";
 
 const TodoItem = ({ todo }) => {
-    const [isToDoEiditable, setIsToDoEiditable] = useState(false);
-    const [toDoMsg, settoDoMsg] = useState(todo.todo);
-    const { deleteTodo, editTodo, toggleCheck } = useTodo();
+  const [isToDoEiditable, setIsToDoEiditable] = useState(false);
+  const [toDoMsg, settoDoMsg] = useState(todo.todo);
+  const { editTodo, toggleCheck, deleteTodo } = useTodo();
 
   const updateToDo = () => {
     editTodo(todo.id, { ...todo, todo: toDoMsg });
@@ -16,7 +16,6 @@ const TodoItem = ({ todo }) => {
   };
 
   return (
-   
     <section className="task">
       <input
         type="checkbox"
@@ -28,7 +27,7 @@ const TodoItem = ({ todo }) => {
       <input
         type="text"
         className={`task-name itemTextInput ${
-          isToDoEiditable ? "" : "eiditable"
+          isToDoEiditable && !todo.checked ? "" : "eiditableBorder"
         } ${todo.checked ? "line" : " "}`}
         value={toDoMsg}
         onChange={(e) => settoDoMsg(e.target.value)}
@@ -37,16 +36,18 @@ const TodoItem = ({ todo }) => {
       <button
         className={`edit ${todo.checked ? "not-allow" : " "}`}
         onClick={() => {
-          if (todo.checked) return;
-          if (isToDoEiditable) {
+          if (todo.checked === true) return;
+          if (isToDoEiditable === true) {
             updateToDo();
           } else setIsToDoEiditable((prev) => !prev);
         }}
-        disabled={todo.checked}
+        // disabled={todo.checked === true}
       >
-        {isToDoEiditable ? "Save" : "Edit"}
+        {isToDoEiditable && !todo.checked ? "Save" : "Edit"}
       </button>
-      <button className="delete" onClick={() => deleteTodo(todo.id)}>delete</button>
+      <button className="delete" onClick={() => deleteTodo(todo.id)}>
+        delete
+      </button>
     </section>
     // </section>
   );

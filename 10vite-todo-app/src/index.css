@@ -324,7 +324,7 @@ font-weight: 400;
     outline: none;
   }
 
-.eiditable{
+.eiditableBorder{
   border-bottom: 2px solid var(--accent-color);
   border-bottom-color: var(--accent-color);
   cursor: auto;
@@ -332,5 +332,7 @@ font-weight: 400;
 
 .not-allow{
   cursor: not-allowed;
+  background-color: #333333b8;
+
 }
 

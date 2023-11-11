@@ -9,8 +9,8 @@ function App() {
 
   const addTodo = (todo) => {
     setToDos((prev) => {
-      return [...prev, { id: Date.now(), ...todo }];
-      // if we write todo instead of { id: Date.now(), ...todo }
+      return [...prev, todo];
+      // if we write { id: Date.now(), ...todo } instead of "todo"
     });
   };
 
@@ -33,6 +33,7 @@ function App() {
     setToDos((prev)=>{
       return prev.map((eachTodo)=>{
         return eachTodo.id === id ? {...eachTodo, checked: !eachTodo.checked} : eachTodo;
+        // if(eachTodo.id === id){ return {...eachTodo, checked: !eachTodo.checked} }    **same function
       })
     })
   }
@@ -56,18 +57,16 @@ function App() {
       <div className="app">
         <h1>ToDo List App</h1>
         <div className="container">
+
           <div className="wrapper">
           {/* Todo form goes here */}
           <TodoForm/>
           </div>
+
           <div className="tasks">
           {/*Loop and Add TodoItem here */}
            <section id="tasks">
-            {todos.map((todo)=>{
-              return <div key={todo.id}>
-              <TodoItem todo={todo}/>
-              </div>
-            })}
+            {todos.map((todo)=>( <div key={todo.id}> <TodoItem todo={todo}/> </div> ))}
            </section>
           </div>
         </div>
