@@ -17,13 +17,13 @@ export const todoSlice = createSlice({
             state.todos.push(todo)
         },
         removeTodo: (state, action)=>{
-            state.todos = state.todos.filter((todo)=> todo.id !== action.payload)
+            state.todos = state.todos.filter((eachTodo)=> eachTodo.id !== action.payload)
         },
         editTodo:(state, action)=>{
-            state.todos.map((eachTodo)=> eachTodo.id === action.payload)
+        return  state.todos.map((eachTodo)=> eachTodo.id === action.payload)
         },
         toggleTodo:(state, action)=>{
-            state.todos.map((eachTodo)=> eachTodo.id === id ? action.payload.checked === !checked : eachTodo)
+        return state.todos.map((eachTodo)=> eachTodo.id === id ? action.payload.checked === !checked : eachTodo)
         }
     }
 })
