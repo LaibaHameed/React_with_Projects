@@ -1,18 +1,14 @@
 import { useEffect, useState } from "react";
-import "./App.css";
 import { TodoProvider } from "./context";
 import TodoForm from "./components/TodoForm";
 import TodoItem from "./components/TodoItem";
+import "./App.css";
 
 function App() {
   const [todos, setToDos] = useState([]);
 
-  const addTodo = (todo) => {
-    setToDos((prev) => {
-      return [...prev, todo];
+  const addTodo = (todo) => setToDos( (prev) => ([...prev, todo]) );
       // if we write { id: Date.now(), ...todo } instead of "todo"
-    });
-  };
 
   const editTodo = (id, todo) => {
     setToDos((prev) => {

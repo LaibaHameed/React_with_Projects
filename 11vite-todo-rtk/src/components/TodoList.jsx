@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux' 
-import { removeTodo } from '../features/todo/todoSlice'
+import { removeTodo, editTodo, toggleTodo } from '../features/todo/todoSlice'
 
 const TodoList = () => {
-
+  const [isToDoEiditable, setIsToDoEiditable] = useState(false);
   const todos = useSelector(state => state.todos);
   const dispatch = useDispatch()
 
@@ -16,13 +16,16 @@ const TodoList = () => {
         name=""
         id="task-check"
         checked={todo.checked}
-        // onChange={toggleComplete}
+        onChange={() => dispatch(toggleTodo(todo.id))}
       />
       <input
         type="text"
         className={`task-name itemTextInput `}
-        // ${isToDoEiditable && !todo.checked ? "" : "eiditableBorder"} ${todo.checked ? "line" : " "}
         value={todo.text}
+        readOnly
+        // ${isToDoEiditable && !todo.checked ? "" : "eiditableBorder"} ${todo.checked ? "line" : " "}
+        // value={inputText}
+        // onChange={e => setInputText(e.target.value)}
         // onChange={(e) => settoDoMsg(e.target.value)}
         // readOnly={!isToDoEiditable}
       ></input>

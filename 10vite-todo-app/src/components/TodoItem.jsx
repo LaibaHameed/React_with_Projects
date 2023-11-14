@@ -36,8 +36,9 @@ const TodoItem = ({ todo }) => {
       <button
         className={`edit ${todo.checked ? "not-allow" : " "}`}
         onClick={() => {
-          if (todo.checked === true) return;
-          if (isToDoEiditable === true) {
+          if (todo.checked) return;
+          // if (todo.checked === true) return;    **same
+          if (isToDoEiditable) {
             updateToDo();
           } else setIsToDoEiditable((prev) => !prev);
         }}

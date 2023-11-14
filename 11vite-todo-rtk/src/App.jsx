@@ -4,7 +4,6 @@ import AddTodo from './components/AddTodo'
 import TodoList from './components/TodoList'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <div className="app">

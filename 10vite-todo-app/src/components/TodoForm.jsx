@@ -6,10 +6,10 @@ const TodoForm = () => {
   const { addTodo } = useTodo();
 
   const addToDo = (e) => {
-    e.preventDefault()
+    e.preventDefault();
     if (!toDo) return;
 
-    addTodo({id: Date.now(), todo: toDo, checked: false });
+    addTodo({ id: Date.now(), todo: toDo, checked: false });
     // then we write instead: addTodo({ todo:toDo, checked: false})
 
     setToDo("");
