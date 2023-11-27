@@ -7,6 +7,7 @@ function App() {
   const [sepAllow, setSepAllow] = useState(true);
   const [password, setPassword] = useState("");
   const passwordRef = useRef(null);
+
   const generatePass = useCallback(()=>{
     let pass = "";
     let chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
@@ -27,7 +28,7 @@ function App() {
   const copyClipboard = useCallback(()=>{
     passwordRef.current?.select();
     passwordRef.current?.setSelectionRange(0,20);
-     window.navigator.clipboard.writeText(password);
+    window.navigator.clipboard.writeText(password);
   }, [password])
 
   useEffect(()=>{

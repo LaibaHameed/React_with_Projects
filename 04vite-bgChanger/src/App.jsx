@@ -12,9 +12,9 @@ function App() {
     <div className='h-full' style={{backgroundColor: color}}> 
     <div className='box'>
     <div className='inerBox'>
-    {/* return ({ colors.map((col, id) => {
+    {/* return ({ colors.map((clr, id) => {
     <button key={id}
-     onClick={ () => setColor(col.colCode)} > {col.name}</button> 
+     onClick={ () => setColor(clr.colCode)} > {col.name}</button> 
      })}) */}
       <button onClick={() =>setColor('#c1121f')} className=''>Red</button>
       <button onClick={() =>setColor('#ffd166')}>yellow</button>
