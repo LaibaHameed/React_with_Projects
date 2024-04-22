@@ -2,9 +2,10 @@ import React, { useState, useContext } from "react";
 import UserContext from "../context/UserContext";
 
 const Login = () => {
+  const { setUser } = useContext(UserContext);
+  
   const [userName, setUserName] = useState("");
   const [password, setPassword] = useState("");
-  const { setUser } = useContext(UserContext);
   const handleSubmit = (e) => {
     e.preventDefault();
     setUser({ userName, password });
@@ -17,6 +18,7 @@ const Login = () => {
         onChange={(e) => setUserName(e.target.value)}
         placeholder="userName"
         type="text"
+        required
       ></input>
       <br/>
       <input
@@ -24,6 +26,7 @@ const Login = () => {
         onChange={(e) => setPassword(e.target.value)}
         placeholder="password"
         type="password"
+        required
       ></input>
       <br/>
       <button onClick={handleSubmit}>submit</button>
